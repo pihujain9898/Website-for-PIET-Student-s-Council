@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Club | Home</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="/CSS/Event.css">
+    <link rel="stylesheet" href="CSS/About-Events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/CSS/Media-Querries.css">
+</head>
+<body>
+  <nav style="background: rgba(0, 0, 0, 0.7);" class="margin-setter">
+    <img src="Img/Logo.png" alt="">
+    <div class="nav-div">
+      <i class="fas fa-bars  fa-3x" id="nav-icon"></i>
+      <input type="checkbox" class="nav-checkbox">
+      <ul class="nav-li-box">
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="/About.html">About</a></li>
+          <li><a href="/Clubs.html">Clubs</a></li>
+          <li><a href="/Events.html">Events</a></li>
+          <li><a href="/Glimpses.html">Glimpses</a></li>
+          <li><a href="/Contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+    <header>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <div class="skw-pages">
+            <div class="skw-page skw-page-1 active">
+              <div class="skw-page__half skw-page__half--left">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content"></div>
+                </div>
+              </div>
+              <div class="skw-page__half skw-page__half--right">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content">
+                    <h2 class="skw-page__heading">Upcoming Events</h2>
+                    <marquee class="event-marquee" scrollamount="3" direction="up" onMouseOver="this.stop()" onMouseOut="this.start()">
+                      <p class="skw-page__description">Python Session on iteration-loops 20th September</p>
+                      <p class="skw-page__description">Intro to functions in python 21st September</p>
+                      <p class="skw-page__description">Session on tupples in python 22nd September</p>
+                      <p class="skw-page__description">Brief discussion on web-technongy 23rd September</p>
+                    </marquee>
+                    <i class="event-down-btn fas fa-chevron-down fa-4x" onclick="showupeventpage(0)"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="about-add-div">
+                <a class="home-scrl-btn" href="#">
+                    <div class="chevron-div ">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                    </div>
+                </a>
+              </div>
+              
+            </div>
+            
+            <div class="skw-page skw-page-2">
+              <div class="skw-page__half skw-page__half--left">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content">
+                    <h2 class="skw-page__heading">Past Events</h2>
+                    <marquee scrollamount="3" direction="up" width= 96%; height="120px" onMouseOver="this.stop()" onMouseOut="this.start()">
+                      <p class="skw-page__description">C Session on pointers, structures, file handling on 22-23 May, 2021
+                        <br>
+                        Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                      </p>
+                      <p class="skw-page__description">Git & Github Workshop on 14-16 May, 2021
+                        <br>
+                        Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                      </p>
+                      <p class="skw-page__description">C language workshop on arrays on 8-9 May, 2021
+                        <br>
+                        Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                      </p>
+                      <p class="skw-page__description">Basic Knowledge of C and C- programs on 5-6 May, 2021
+                        <br>
+                        Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                      </p>
+                      <p class="skw-page__description">Front-end devlopment on 28-29 June, 2021
+                        <br>
+                        Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                      </p>
+                    </marquee>
+                    <i class="event-down-btn fas fa-chevron-down fa-4x" onclick="showupeventpage(1)"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skw-page__half skw-page__half--right">
+                <div class="skw-page__skewed">
+                  <div class="skw-page__content"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="event-popup margin-setter">
+              <ul class="rolldown-list" id="myList">
+                <li><p class="skw-page__description">Python Session on iteration-loops 20th September</p></li>
+                <li><p class="skw-page__description">Intro to functions in python 21st September</p></li>
+                <li><p class="skw-page__description">Session on tupples in python 22nd September</p></li>
+                <li><p class="skw-page__description">Brief discussion on web-technongy 23rd September</p></li>
+                <li><p class="skw-page__description">Python Session on iteration-loops 20th September</p></li>
+                <li><p class="skw-page__description">Intro to functions in python 21st September</p></li>
+                <li><p class="skw-page__description">Session on tupples in python 22nd September</p></li>
+                <li><p class="skw-page__description">Brief discussion on web-technongy 23rd September</p></li>
+                <li><p class="skw-page__description">Python Session on iteration-loops 20th September</p></li>
+                <li><p class="skw-page__description">Intro to functions in python 21st September</p></li>
+                <li><p class="skw-page__description">Session on tupples in python 22nd September</p></li>
+                <li><p class="skw-page__description">Brief discussion on web-technongy 23rd September</p></li>
+              </ul> 
+              <i class="fa fa-times fa-3x event-popup-exit" aria-hidden="true" onclick="initialpage()"></i>
+            </div>
+
+            <div class="event-popup margin-setter">
+              <ul class="rolldown-list" id="myList">
+                
+                <li><p class="skw-page__description">C Session on pointers, structures, file handling on 22-23 May, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">Git & Github Workshop on 14-16 May, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">C language workshop on arrays on 8-9 May, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">Basic Knowledge of C and C- programs on 5-6 May, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">Front-end devlopment on 28-29 June, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">C Session on pointers, structures, file handling on 22-23 May, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">Git & Github Workshop on 14-16 May, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">C language workshop on arrays on 8-9 May, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">Basic Knowledge of C and C- programs on 5-6 May, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+                <li><p class="skw-page__description">Front-end devlopment on 28-29 June, 2021
+                  <br>
+                  Recordings: <a class="event-links" href="#">www.lorem.com</a>
+                </p></li>
+
+              </ul> 
+              <i class="fa fa-times fa-3x event-popup-exit" aria-hidden="true" onclick="initialpage()"></i>
+            </div>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script src="/JS/Events.js"></script>
+    </header>
+</body>
+</html>

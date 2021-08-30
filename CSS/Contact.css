@@ -1,0 +1,43 @@
+.contact-main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.contact-left-div, .contact-right-div{
+    height: 60%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-left-input{
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    color: grey;
+    line-height: normal;
+}
+.contact-right-input{
+    font-size: 1.6rem;
+    line-height: normal;
+}
+.contact-links{
+    color: #212529;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    font-size: 2rem;
+}
+.contact-btn{
+    font-weight: bold;
+    border: #212529 solid 3px;
+}
+.contact-btn:hover{
+    background-color: rgba(176, 196, 222, 0);
+    color: #212529;
+}
+.contact-left-div a:hover{
+    color: grey;
+}

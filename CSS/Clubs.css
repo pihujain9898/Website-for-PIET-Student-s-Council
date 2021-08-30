@@ -1,0 +1,209 @@
+/* ------------- Club Page --------------- */
+/* ------------- Club Page --------------- */
+/* ------------- Club Page --------------- */
+/* ------------- Club Page --------------- */
+.club-header{
+  padding: 8rem 0;
+  display: flex;
+}
+.club-heading{
+  font-size: 4.2rem;
+  letter-spacing: 0.16em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #444;
+  margin: 4rem 2rem;
+}
+.clubs-container{
+  width: 100%;
+}
+.club-div-all{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.club-div{
+  width: 21.55rem;
+  margin: 2rem;
+  cursor: pointer;
+  box-shadow: .5rem .5rem 1rem 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+.club-div-holder{
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.club-div-front, .club-div-back{
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  background-position: center;
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 256px;
+  height: auto;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.club-div-back{
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+.club-div-holder:hover .club-div-front,
+.club-div-holder:hover .club-div-back{
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.club-div-back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.club-div-inner{
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 2rem;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  perspective: inherit;
+  z-index: 2;
+}
+.club-div-holder .club-div-back{
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+.club-div-holder .club-div-front{
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.club-div-holder:hover .club-div-back{
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.club-div-holder:hover .club-div-front{
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+.club-div-front .club-div-inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.club-div-front .club-div-inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+.club-div-front .club-div-inner span{
+  color: rgba(255,255,255,0.7);
+  font-weight: 300;
+}
+@media screen and (max-width: 640px){
+
+}
+@media screen and (max-width: 480px){
+  /* .club-div{
+    width: calc(50% - 20px);
+  } */
+}
+@media screen and (max-width: 320px){
+  /* .club-div{
+    width: 100%;
+    margin: 0 0 20px 0;
+  } */
+}
+
+.all-club-page {
+  transition: none;
+  height: auto;
+  overflow: hidden;
+  display: none;
+  background-color: whitesmoke;
+  box-shadow: 0 .5rem 1.2rem 0rem rgba(0, 0, 0, .6);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6rem;
+}
+.club-page-exit{
+  cursor: pointer;
+  font-size: 2rem;
+  color: lightseagreen;
+}
+.club-popup-exit{
+  position: absolute;
+  right: 0;
+  transform: translateY(-150%);
+  padding-right: 2rem;
+  cursor: pointer;
+  color: #888888;
+}
+.club-subdivs{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(87, 87, 87);
+  text-align: center;
+  padding: 2rem;
+  border: rgb(0, 0, 0,0.1) solid 2px;
+}
+.club-page-up-div{
+  display: flex;
+  margin-bottom: 6rem;
+}
+.club-p-up-rit{
+  display: block;
+  min-width: 20rem;
+  height: 20rem;
+  box-shadow: 0 .5rem 1.2rem 0rem rgba(0, 0, 0, .4);
+  justify-self: left;
+  align-self: center;
+}
+.club-p-up-lft{
+  width: auto; 
+  display: flex;
+  flex-direction: column;
+  color: rgb(87, 87, 87);
+  margin-left: 6rem;
+}
+.club-page-main-h{
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: normal;
+}
+.club-page-sub-h{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0rem;
+}
+.club-page-p{
+  font-size: 1.6rem;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  overflow: hidden;
+}
+.club-page-notice{
+  margin-top: 1.4rem;
+}
+.club-page-sub-h{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.club-page-h{
+  margin-top: 1em;
+}

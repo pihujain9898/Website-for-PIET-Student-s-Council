@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debug Club | Home</title>
+  <link rel="stylesheet" href="CSS/Home.css">
+  <link rel="stylesheet" href="CSS/About-Events.css">
+  <link rel="stylesheet" href="CSS/Clubs.css">
+  <link rel="stylesheet" href="/CSS/Media-Querries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body class="abt-main">
+  <nav style="background: rgba(0, 0, 0, 0.7);" class="margin-setter">
+    <img src="Img/Logo.png" alt="">
+    <div class="nav-div">
+      <i class="fas fa-bars  fa-3x" id="nav-icon"></i>
+      <input type="checkbox" class="nav-checkbox">
+      <ul class="nav-li-box">
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="/About.html">About</a></li>
+          <li><a href="/Clubs.html">Clubs</a></li>
+          <li><a href="/Events.html">Events</a></li>
+          <li><a href="/Glimpses.html">Glimpses</a></li>
+          <li><a href="/Contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+
+  <header class="club-header margin-setter" id="app">
+    <div class="clubs-container">
+      <h1 class="club-heading">Our Clubs</h1>
+
+      <div class="club-div-all" >
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(1)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/Udan\ Club.jpg')">
+              <div class="club-div-inner">
+                <p>UDAAN</p>
+                <span>AEROMODELLING CLUB</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(2)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/Sports\ Club.jpg')">
+              <div class="club-div-inner">
+                <p>SPORTS</p>
+                <span>GAMES & SPORTS CLUB</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(3)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/JDClub.jpg')">
+              <div class="club-div-inner">
+                <p>jdc</p>
+                <span>DRAMA & ACTING CLUB</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(4)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/Origin.jpg')">
+              <div class="club-div-inner">
+                <p>ORIGIN</p>
+                <span>DESGINING CLUB</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(5)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/ScinTech.jpg')">
+              <div class="club-div-inner">
+                <p>Sci. & Tech.</p>
+                <span>Science and Techonolgy CLUB</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(6)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/cytron.jpg')">
+              <div class="club-div-inner">
+                <p>Cytron</p>
+                <span>Coding Club</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Club which works in fields of Devlpoment of Websites, Mobile Apps, Softwares and Programming in various fields
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(7)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/literary.jpg')">
+              <div class="club-div-inner">
+                <p>LITERARY</p>
+                <span>LITERARture CLUB</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(8)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/helping\ hands.jpg')">
+              <div class="club-div-inner">
+                <p>Helping Hands</p>
+                <span>Society Help Club</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(9)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/dance\ n\ music.jpg')">
+              <div class="club-div-inner">
+                <p>D & M</p>
+                <span>Dance and Music Club</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(10)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/wise.jpg')">
+              <div class="club-div-inner">
+                <p>Wise</p>
+                <span>WOMEN IN SCIENCE AND TECHNOLOGY CLUB</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(11)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/pbic.jpg')">
+              <div class="club-div-inner">
+                <p>PBIC</p>
+                <span>POORNIMA BUSSINESS INCUBATION CENTRE</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(12)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/pias.jpg')">
+              <div class="club-div-inner">
+                <p>PIAS</p>
+                <span>POORNIMA INSTITUTE ALUMNI SOCIETY</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(13)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/aptitude.jpg')">
+              <div class="club-div-inner">
+                <p>APTINEUS</p>
+                <span>APTItude CLUB</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(14)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/perfact\ pixel.jpg')">
+              <div class="club-div-inner">
+                <p>PERFECT PIXELS</p>
+                <span>PERFECT PIXELS club</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-div">
+          <div class="club-div-holder" onclick="showclubpage(15)">
+            <div class="club-div-front" style="background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Img/yantram.jpg')">
+              <div class="club-div-inner">
+                <p>YANTRAM</p>
+                <span>Projects Devlpoment Club</span>
+              </div>
+            </div>
+            <div class="club-div-back">
+              <div class="club-div-inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+
+      <div class="all-club-page club-page1">
+        <a class="club-page-exit" onclick="initialpage()">Udan Exit</a>
+      </div>
+      <div class="all-club-page club-page2">
+        <a class="club-page-exit" onclick="initialpage()">Sports Exit</a>
+      </div>
+      <div class="all-club-page club-page3">
+        <a class="club-page-exit" onclick="initialpage()">jdc Exit</a>
+      </div>
+      <div class="all-club-page club-page4">
+        <a class="club-page-exit" onclick="initialpage()">4 Exit</a>
+      </div>
+      <div class="all-club-page club-page5">
+        <a class="club-page-exit" onclick="initialpage()">5 Exit</a>
+      </div>
+      <div class="all-club-page club-page6">
+        <i class="fa fa-times fa-3x club-popup-exit" aria-hidden="true" onclick="initialpage()"></i>
+        <div class="club-page-up-div">
+          <img class="club-p-up-rit" src="/Img/Cytron.png" alt="">
+          <div class="club-p-up-lft">
+            <h3 class="club-page-main-h">Cytron Club</h3>
+            <h4 class="club-page-sub-h">Objective</h4>
+            <p class="club-page-p">Poornima programming society Is a club which works as an entity in certain fields, namely as Programming Languages, Website Development, Android App Development, Aptitude Enhancement, Event Management, etc. In this club, members from final year provide regular sessions and workshops to the students of first, second and third year. In workshops to the students of first, second and third year. This club provides poornimites an opportunity to Mentor the Best and Get Mentored by the Best.</p>
+          </div>
+          </div>
+          <div class="club-subdivs">
+            <h4 class="club-page-sub-h">Captian</h4>
+            <p class="club-page-p">Dhairya Kumar Jain.</p>
+            <p class="club-page-p">Contact - 9414888888.</p>
+            <h4 class="club-page-sub-h club-page-h">Vice-Captian</h4>
+            <p class="club-page-p">Darshil Jain.</p>
+            <p class="club-page-p">Contact - 7374980669.</p>
+          </div>
+          <div class="club-p-dwn-mid club-subdivs">
+            <h4 class="club-page-sub-h">Upcoming Events</h4>
+            <p class="club-page-p">C Session on pointers, structures, file handling on 22-23 May, 2021<br></p>
+            <p class="club-page-p club-page-notice">Git & Github Workshop on 14-16 May, 2021<br></p>
+            <p class="club-page-p club-page-notice">C Session on pointers, structures, file handling on 22-23 May, 2021<br></p>
+          </div>
+          <div class="club-p-dwn-lft club-subdivs">
+            <h4 class="club-page-sub-h">Past Events</h4>
+            <p class="club-page-p">C Session on pointers, structures, file handling on 22-23 May, 2021<br></p>
+            <p class="club-page-p club-page-notice">Git & Github Workshop on 14-16 May, 2021<br></p>
+            <!-- <p class="club-page-p club-page-notice">Git & Github Workshop on 14-16 May, 2021<br></p> -->
+            <br>
+            <i class="event-down-btn fas fa-chevron-down fa-2x" onclick="showupeventpage(0)"></i>
+          </div>
+        </div>
+      <div class="all-club-page club-page7">
+        <a class="club-page-exit" onclick="initialpage()">7 Exit</a>
+      </div>
+      <div class="all-club-page club-page8">
+        <a class="club-page-exit" onclick="initialpage()">8 Exit</a>
+      </div>
+      <div class="all-club-page club-page9">
+        <a class="club-page-exit" onclick="initialpage()">9 Exit</a>
+      </div>
+      <div class="all-club-page club-page10">
+        <a class="club-page-exit" onclick="initialpage()">10 Exit</a>
+      </div>
+      <div class="all-club-page club-page11">
+        <a class="club-page-exit" onclick="initialpage()">11 Exit</a>
+      </div>
+      <div class="all-club-page club-page12">
+        <a class="club-page-exit" onclick="initialpage()">12 Exit</a>
+      </div>
+      <div class="all-club-page club-page13">
+        <a class="club-page-exit" onclick="initialpage()">13 Exit</a>
+      </div>
+      <div class="all-club-page club-page14">
+        <a class="club-page-exit" onclick="initialpage()">14 Exit</a>
+      </div>
+      <div class="all-club-page club-page15">
+        <a class="club-page-exit" onclick="initialpage()">15 Exit</a>
+      </div>
+
+    </div>
+  </header>
+  <script src="/JS/Clubs.js"></script>
+</body>
+
+</html>

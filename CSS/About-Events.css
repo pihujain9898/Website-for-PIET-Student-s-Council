@@ -1,0 +1,217 @@
+/* ------------- About Page Header --------------- */
+/* ------------- About Page Header --------------- */
+/* ------------- About Page Header --------------- */
+/* ------------- About Page Header --------------- */
+.abt-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-height: 100vh; */
+}
+.about-head-div{
+  margin: 20vmin 0 10vmin 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: azure;
+  text-align: center;
+}
+.about-logo{
+  width: 14rem;
+  animation: logo-rotation 92s 3s infinite;
+}
+@keyframes logo-rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.about-logo:hover{
+  animation-play-state: paused;
+}
+
+.about-header-section{
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #999;
+}
+
+/* ------------- About Sections --------------- */
+/* ------------- About Sections --------------- */
+.abt-a {
+  text-decoration: none;
+  margin: 1rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+.abt-subsection-p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.abt-section {
+  max-width: 90rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+}
+
+.abt-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 2rem;
+  margin: 1.3rem 0;
+}
+
+.section-lead {
+  max-width: 80rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: .1.8em;
+  line-height: 1.6em;
+  margin: 1rem auto 1.5rem;
+  text-transform: uppercase;
+  color: #434343a4;
+}
+
+.service a {
+  color: #5b7abb;
+  display: block;
+}
+
+.service h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #56ceba;
+  font-size: 1.6rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.services-grid {
+  display: flex;
+  align-items: center;
+}
+
+.service {
+  background: #fff;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: .4rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  border: .4rem solid #e7e7e7;
+  transition: all 0.3s ease;
+}
+
+.service:hover {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.service i {
+  font-size: 3.45rem;
+  margin: 1rem 0;
+}
+
+.service1 i,
+.service1 h4 {
+  color: #42b7ca;
+}
+
+.service1:hover {
+  border: .3rem solid #42b7ca;
+}
+
+.service2 i,
+.service2 h4{
+  color: #425fca;
+}
+
+.service2:hover {
+  border: .3rem solid #425fca;
+}
+
+.service3 i,
+.service3 h4{
+  color: #9c42ca;
+}
+
+.service3:hover {
+  border: .3rem solid #9c42ca;
+}
+
+.service > * {
+  flex: 1 1 100%;
+}
+
+/* ------------- Chevorlate ------------------- */
+/* ------------- Chevorlate ------------------- */
+
+.about-add-div{
+  position: fixed;
+  right: 10vw;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* ------------- About Team Page --------------- */
+/* ------------- About Team Page --------------- */
+
+.abt-main{
+  background:url('../Img/About-Main_BG.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.about-main-div{
+  text-align:center;  
+  padding-bottom: 10rem;
+}
+.team-img{
+  width: 100%;
+  box-shadow: 0 .5rem 1.2rem 0rem rgba(0, 0, 0, 1);
+}
+.team-heading {
+  font-family: 'Monoton', cursive;
+  font-weight: 500;
+  word-spacing: 0.36em;
+  line-height: 1em;
+  font-size: 9.2rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #095fab 10%, #25abe8 50%, #57d75b 60%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+  padding: 5rem 0;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  } 
+}
+
+/* ------------- About Footer --------------- */
+/* ------------- About Footer --------------- */
+.abt-footer{
+  min-height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+}
+.devloper-name{
+  font-size: 2rem;
+  font-weight:bolder;
+}  
+
